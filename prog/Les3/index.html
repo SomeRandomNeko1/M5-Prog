@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FontShowCase</title>
+  <script src="https://kit.fontawesome.com/5476467842.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="fonts.googleapis.com/">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Merriweather&Noto+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <figure class="header__logo">
+      <i class="fa-solid fa-pen"></i>
+    </figure>
+    <div class="header__rightWrapper">
+      <label for="toggle" class="toggle">
+        <input id="toggle" class="toggle__input" type="checkbox" name="" id="">
+      </label>
+      <figure class="header__avatar">
+        <img class="header__img" src="img/lihong.webp" alt="Random Pic">
+      </figure>
+    </div>
+  </header>
+  <article class="showCase">
+    <input id="js--input" type="text" class="showCase__input">
+    <section class="showCase__section">
+      <div class="showCase__wrapper">
+        <h3 class="showCase__font">Dancing Script </h3>
+        <button class="heart">
+          <i class="fa-regular fa-heart heart__logo"></i>
+        </button> 
+      </div>
+      <h2 id="js--dancing" class="showCase__output showCase__output--cursive">Placeholder</h2>
+    </section>
+    <section class="showCase__section">
+      <div class="showCase__wrapper">
+        <h3 class="showCase__font">Lato </h3> 
+        <button class="heart">
+          <i class="fa-regular fa-heart heart__logo"></i>
+        </button> 
+      </div>
+      <h2 id="js--lato" class="showCase__output showCase__output--sansSerif">Placeholder</h2>
+    </section>
+    <section class="showCase__section">
+      <div class="showCase__wrapper">
+        <h3 class="showCase__font">Merriweather </h3> 
+        <button class="heart">
+          <i class="fa-regular fa-heart heart__logo"></i>
+        </button> 
+      </div>
+      <h2 id="js--merriweather" class="showCase__output showCase__output--Serif">Placeholder</h2>
+    </section>
+  </article>
+</body>
+
+</html>

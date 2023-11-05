@@ -1,0 +1,50 @@
+@use 'colors';
+@use 'fonts';
+
+// button with Hover
+%cta{
+  width: 11rem;
+  padding:0.5rem;
+  font-size: 70%;
+  background: colors.$pink;
+  border: none;
+  color: colors.$font-color;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+%cta:hover{
+  cursor: pointer;
+  background: darken(colors.$pink, 10%);
+  transition: 0.2s;
+}
+
+
+%header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+%h2Handwriting{
+  font-family: fonts.$handwriting;
+  font-size: 200%;
+  color: colors.$font-color
+}
+
+// sections
+%section{
+  height: 80rem;
+  border-bottom: colors.$border-pink-small;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+%icon{
+  font-size: 250%;
+  color: colors.$font-color;
+  border: colors.$border-orange;
+  border-radius: 50%;
+  padding: 1.5rem;
+}

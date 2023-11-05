@@ -1,0 +1,35 @@
+@use 'colors'; 
+@use 'components';
+
+.nav {
+  width: 100%;
+  background: colors.$Sapphire-transparent;
+  display: flex;
+  justify-content: space-between;
+  min-height: 7rem;
+  align-items: center;
+  color: colors.$font-color;
+  font-size: 120%;
+  padding: 2rem;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav__logo{
+  @extend %icon;
+}
+
+.nav__list{
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  font-size: 120%;
+}
+
+
+.nav__button{
+ @extend %cta; 
+}
