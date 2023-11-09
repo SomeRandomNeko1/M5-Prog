@@ -1,0 +1,68 @@
+@use '../../scss/basics/colors.scss';
+@use '_mixins.scss';
+
+.house {
+    @include mixins.house-styles;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid colors.$house-color;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 28rem;
+        width: 150px;
+        height: 150px;
+        background: colors.$house-color;
+    }
+}
+
+.door {
+    position: absolute;
+    left: 75rem;
+    bottom: 9rem;
+    width: 5rem;
+    height: 9rem;
+    background: colors.$door-color;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 4rem;
+        bottom: 3rem;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: colors.$door-knob-color;
+    }
+}
+
+.window {
+    position: absolute;
+    left: 69rem;
+    bottom: 15rem;
+    width: 5rem;
+    height: 5rem;
+    background: colors.$window-color;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 2rem;
+        width: 1rem;
+        height: 5rem;
+        background: colors.$window-cross-color;
+    }
+
+    &::after {
+        transform: rotate(-90deg);
+    }
+}

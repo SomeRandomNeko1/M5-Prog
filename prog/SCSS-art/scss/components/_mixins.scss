@@ -1,0 +1,12 @@
+@use '../../scss/basics/colors.scss';
+
+@mixin house-styles {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rem;
+  height: 50rem;
+  border: 1px solid colors.$house-color;
+  background: colors.$background-color;
+}
